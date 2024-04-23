@@ -5,7 +5,7 @@ from firebase_admin import credentials, storage
 
 class FirebaseStorageHandler:
     def __init__(self):
-        cred_path = '/home/if22b009/projects/Smart Home Monitoring/handlers/serviceAccountKey.json'
+        cred_path = '/home/if22b009/Repo/handlers/serviceAccountKey.json'
         cred = credentials.Certificate(cred_path)
         firebase_admin.initialize_app(cred, {
             'storageBucket': 'smart-home-monitoring-f043a.appspot.com'

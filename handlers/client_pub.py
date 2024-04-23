@@ -13,7 +13,7 @@ def connect_to_broker(url_str):
     mqttc = mqtt.Client(mqtt.CallbackAPIVersion.VERSION1)
     mqttc.on_connect = on_connect
 
-    ca_cert_path = "/home/if22b009/projects/Smart Home Monitoring/handlers/broker.emqx.io-ca.crt"
+    ca_cert_path = "/home/if22b009/Repo/handlers/broker.emqx.io-ca.crt"
     mqttc.tls_set(ca_cert_path)
 
     url = urlparse(url_str)

@@ -21,8 +21,8 @@ from handlers.blynk_handler import check_button_press
 class SmartHomeController:
     def __init__(self):
         self.shutdown_flag = threading.Event()
-        self.filepath = "/home/if22b009/projects/Smart Home Monitoring/pictures"
-        self.singlePicPath = "/home/if22b009/projects/Smart Home Monitoring/tmp"
+        self.filepath = "/home/if22b009/Repo/pictures"
+        self.singlePicPath = "/home/if22b009/Repo/tmp"
 
         self.motion_detector = MotionDetection()
         self.motion_thread = Thread(target=self.motion_detection_loop)
